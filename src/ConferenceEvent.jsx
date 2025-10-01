@@ -226,13 +226,21 @@ const ConferenceEvent = () => {
                                                         >
                                                             &#43;
                                                         </button>
-
-
                                                     </div>
                                                 )}
                                             </div>
                                         </div>
                                     ))}
+                                </div>
+                                <div className="total_cost">Total Cost: ${venueTotalCost}</div>
+                            </div>
+
+                            {/*Necessary Add-ons*/}
+                            <div id="addons" className="venue_container container_main">
+                                <div className="text">
+                                    <h1> Add-ons Selection</h1>
+                                </div>
+                                <div className="addons_selection">
                                     {avItems.map((item, index) => (
                                         <div className="av_data venue_main" key={index}>
                                             <div className="img">
@@ -248,30 +256,12 @@ const ConferenceEvent = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="total_cost">Total Cost: ${venueTotalCost}</div>
-                            </div>
-
-                            {/*Necessary Add-ons*/}
-                            <div id="addons" className="venue_container container_main">
-
-
-                                <div className="text">
-
-                                    <h1> Add-ons Selection</h1>
-
-                                </div>
-                                <div className="addons_selection">
-
-                                </div>
                                 <div className="total_cost">Total Cost: {avTotalCost}</div>
                             </div>
 
                             {/* Meal Section */}
-
                             <div id="meals" className="venue_container container_main">
-
                                 <div className="text">
-
                                     <h1>Meals Selection</h1>
                                 </div>
 
